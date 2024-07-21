@@ -30,7 +30,7 @@ const Faqs: FunctionComponent<Props> = ({ faqList, title }) => {
                 className={isOpenIndex === index ? "rotate-180" : ""}
               />
             </div>
-            {isOpenIndex === index && <p>{answer}</p>}
+            {isOpenIndex === index && <p className="text-left">{answer}</p>}
           </button>
         ))}
       </div>

@@ -27,7 +27,7 @@ const HeroBanner: FunctionComponent<Props> = ({
         aspectRatio: "16/8",
       }}
     >
-      <div className="flex flex-col gap-4 md:gap-8 items-center py-24">
+      <div className="flex flex-col gap-4 md:gap-8 items-center py-24 px-4">
         <div className="flex flex-col gap-3 md:gap-6 items-center text-center">
           <h1 className="text-2xl md:text-5xl text-[#] font-bold text-[#374151]">
             {heading}

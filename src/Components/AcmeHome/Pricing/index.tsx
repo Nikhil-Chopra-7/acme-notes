@@ -14,7 +14,7 @@ const Testimonials: FunctionComponent<Props> = ({ priceList, title }) => {
   return (
     <div className="flex flex-col gap-10" id={ComponentIds.PRICING}>
       <p className="text-3xl font-bold text-center w-full">{title}</p>
-      <div className="grid md:grid-cols-3 gap-y-10 md:gap-6 self-center">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-y-10 md:gap-6 self-center">
         {priceList.map(({ heading, price, benefitList }, index) => (
           <div
             key={index}
