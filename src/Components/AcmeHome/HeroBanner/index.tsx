@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import Button from "../../common/Button";
+import Button from "../../../common/Button";
 
 interface Props {
   heading: string;
