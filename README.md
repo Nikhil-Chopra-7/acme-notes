@@ -42,7 +42,12 @@ Acme Note is a fictional SaaS company providing a web-based application for taki
 
 ### Running the Project
 
-1. Run this command in terminal:
+1. Pull master branch
+2. Run this command in terminal:
+   ```sh
+   npm run install
+   ```
+3. Run this command in terminal:
    ```sh
    npm run start
    ```
