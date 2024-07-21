@@ -25,7 +25,7 @@ const AcmeHome: FunctionComponent = () => {
             title={"What Our Users Say"}
           />
           <Pricing title={"Pricing"} priceList={priceList} />
-          <Faqs faqList={faqData} />
+          <Faqs faqList={faqData} title="Frequently Asked Questions" />
         </div>
       </div>
     </Layout>

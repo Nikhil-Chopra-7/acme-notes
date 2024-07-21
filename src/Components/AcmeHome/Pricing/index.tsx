@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import { ComponentIds } from "../../../DataMapper/acmeHome";
 
 interface Props {
   title: string;
@@ -10,7 +11,7 @@ interface Props {
 }
 const Testimonials: FunctionComponent<Props> = ({ priceList, title }) => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8" id={ComponentIds.PRICING}>
       <p className="text-2xl font-bold">{title}</p>
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 self-center">
         {priceList.map(({ heading, price, benefitList }, index) => (

@@ -89,3 +89,20 @@ export const faqData = [
     answer: `Your notes are stored securely with end-to-end encryption, ensuring that only you have access to them.`,
   },
 ];
+
+export enum ComponentIds {
+  FEATURES = "features",
+  PRICING = "pricing",
+  testimonials = "testimonials",
+  FAQS = "faqs",
+}
+
+export const navBarData = {
+  logo: "acme",
+  navList: [
+    { name: "Features", value: ComponentIds.FEATURES },
+    { name: "Pricing", value: ComponentIds.PRICING },
+    { name: "Testimonials", value: ComponentIds.testimonials },
+    { name: "FAQs", value: ComponentIds.FAQS },
+  ],
+};

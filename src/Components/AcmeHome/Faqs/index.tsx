@@ -1,13 +1,16 @@
 import { FunctionComponent, useState } from "react";
+import { ComponentIds } from "../../../DataMapper/acmeHome";
 
 interface Props {
   faqList: Array<{ question: string; answer: string }>;
+  title: string;
 }
-const Faqs: FunctionComponent<Props> = ({ faqList }) => {
+const Faqs: FunctionComponent<Props> = ({ faqList, title }) => {
   const [isOpenIndex, setIsOpenIndex] = useState<number>();
 
   return (
-    <div>
+    <div className="flex flex-col gap-8" id={ComponentIds.FAQS}>
+      <p className="text-2xl font-bold">{title}</p>
       <div className="flex flex-col gap-4 max-w-[730px]">
         {faqList.map(({ answer, question }, index) => (
           <button
