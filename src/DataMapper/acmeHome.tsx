@@ -7,7 +7,13 @@ export const heroBannerData = {
   ),
   subHeading: "The ultimate note-taking app to streamline your productivity",
   ctaText: "Get Started",
-  cta: () => {},
+  cta: () => {
+    document.getElementById(ComponentIds.PRICING)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "start",
+    });
+  },
   image: "https://ik.imagekit.io/ho7e9hucv/Acme%20Notes/hero_banner.jpg",
 };
 
