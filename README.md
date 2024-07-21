@@ -44,8 +44,19 @@ Acme Note is a fictional SaaS company providing a web-based application for taki
 
 1. Run this command in terminal:
    ```sh
-   open index.html
+   npm run start
    ```
+
+## Page Speed
+
+1. https://pagespeed.web.dev/ :-
+   - Mobile:- 98
+   - Web:- 99
+2. https://gtmetrix.com/ :- 94
+
+## Optimizations
+
+- Used imagekit.io for image optimiztion
 
 ## Contributing
 
