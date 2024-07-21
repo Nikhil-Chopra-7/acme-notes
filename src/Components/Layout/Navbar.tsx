@@ -34,7 +34,7 @@ const Navbar: FunctionComponent = () => {
             <div className="flex gap-6 items-center cursor-pointer">
               {navList.map(({ name, value }, index) => (
                 <p
-                  className="text-[#737396] font-semibold"
+                  className="text-[#737396] hover:text-[#2026d2] transition-all duration-150 hover:border-b hover:border-[#2026d2] font-semibold"
                   key={index}
                   onClick={() => {
                     document.getElementById(value)?.scrollIntoView({
@@ -54,7 +54,17 @@ const Navbar: FunctionComponent = () => {
             className="w-fit cursor-pointer md:hidden"
             onClick={() => setIsMenuOpen((prev) => !prev)}
           >
-            <img src="" alt="close" />
+            <img
+              src={
+                isMenuOpen
+                  ? "https://ik.imagekit.io/ho7e9hucv/Acme%20Notes/close.png"
+                  : "https://ik.imagekit.io/ho7e9hucv/Acme%20Notes/menu.png"
+              }
+              alt="close"
+              height={24}
+              width={24}
+              className={isMenuOpen ? "brightness-0" : ""}
+            />
           </div>
         </div>
         {isMenuOpen && (

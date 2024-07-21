@@ -17,15 +17,23 @@ const AcmeHome: FunctionComponent = () => {
   return (
     <Layout>
       <div className="bg-[#FAFAFA]">
-        <div className="px-4 max-w-[1200px] m-auto flex flex-col gap-10 md:gap-16 py-16">
+        <div className="m-auto flex flex-col gap-10 md:gap-0 pb-16 ">
           <HeroBanner {...heroBannerData} />
-          <Features featureList={featuresList} title={"Features"} />
-          <Testimonials
-            testimonialList={testimonialData}
-            title={"What Our Users Say"}
-          />
-          <Pricing title={"Pricing"} priceList={priceList} />
-          <Faqs faqList={faqData} title="Frequently Asked Questions" />
+          <div className="md:py-20 px-4">
+            <Features featureList={featuresList} title={"Features"} />
+          </div>
+          <div className="py-10 md:py-20 bg-gray-100 px-4">
+            <Pricing title={"Pricing"} priceList={priceList} />
+          </div>
+          <div className="py-10 md:py-20 px-4">
+            <Testimonials
+              testimonialList={testimonialData}
+              title={"What Our Users Say"}
+            />
+          </div>
+          <div className="py-10 md:py-20 px-4">
+            <Faqs faqList={faqData} title="Frequently Asked Questions" />
+          </div>
         </div>
       </div>
     </Layout>
